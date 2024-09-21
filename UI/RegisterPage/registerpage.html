@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng ký</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../HomePage/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark" style="background-color: #153e6e;">
+        <div class="container-fluid ms-3 me-3">
+            <a class="navbar-brand" href="#">xTOIEC</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <span class="navbar-text fw-medium">HỆ THỐNG THI TRỰC TUYẾN</span>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="centerElement">
+                        <a id="examButton" class="navbar-text fw-medium ms-3 me-3" href="#">Đề thi online</a>
+                        <a id="historyButton" class="navbar-text fw-medium me-3" a href="#">Lịch sử làm bài</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="image-container" >
+                                <img src="https://th.bing.com/th/id/OIP.AX4TQBh9YDb7g2L2REXO7QHaGZ?rs=1&pid=ImgDetMain" class="rounded-image"/>
+                            </span>    
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Trang cá nhân</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <form class="registration-form">
+        <div class="form-section">
+            <h2>THÔNG TIN CÁ NHÂN</h2>
+            
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Họ và tên thí sinh *</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên thí sinh" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="birthDate" class="form-label">Ngày sinh *</label>
+                                <input type="date" class="form-control" id="birthDate" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Giới tính *</label>
+                                <div class="gender">
+                                    <input type="radio" id="male" name="gender" value="Nam">
+                                    <label for="male">Nam</label>
+                                    <input type="radio" id="female" name="gender" value="Nữ">
+                                    <label for="female">Nữ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="id-type">Loại giấy tờ đăng ký dự thi *</label>
+                                <select id="id-type">
+                                    <option value="">Chọn</option>
+                                    <option value="cmnd">CMND</option>
+                                    <option value="cccd">CCCD</option>
+                                    <option value="passport">Hộ chiếu</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">                
+                            <div class="col-md-6">
+                                <label for="id-number">Số CMND/CCCD/HC *</label>
+                                <input type="text" id="id-number" placeholder="Vui lòng nhập số CMND">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="id-issue-date">Ngày cấp *</label>
+                                <input type="date" id="id-issue-date">
+                            </div>
+                        </div>
+
+                        <label for="issue-place">Nơi cấp *</label>
+                        <input type="text" id="issue-place" placeholder="Nhập nơi cấp">
+
+                        <label>Đã sử dụng CMND khác</label>
+                        <div class="id-usage">
+                            <input type="radio" id="used-no" name="id-used" value="no" checked>
+                            <label for="used-no">Không</label>
+                            <input type="radio" id="used-yes" name="id-used" value="yes">
+                            <label for="used-yes">Có</label>
+                        </div>
+
+                        <label>Địa chỉ làm việc</label>
+                        <div class="row">                   
+                            <div class="col-md-4">
+                                <label for="city">Tỉnh/Thành phố *</label>
+                                <select id="city">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>                
+                            <div class="col-md-4">
+                                <label for="district">Quận/Huyện *</label>
+                                <select id="district">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>                
+                            <div class="col-md-4">
+                                <label for="ward">Xã/Phường *</label>
+                                <select id="ward">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="address">Số nhà, đường/phố *</label>
+                        <input type="text" id="address" placeholder="Nhập số nhà, đường/phố">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="phone">Số điện thoại *</label>
+                                <input type="tel" id="phone" placeholder="Nhập số điện thoại">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" value="alialbum25@gmail.com" readonly>
+                            </div>
+                        </div>
+                        <label>Nghề nghiệp *</label>
+                        <div class="row">
+                            
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <input type="checkbox" id="student" name="occupation" value="Học sinh">
+                                    <label for="student">Học sinh, sinh viên</label>
+                                </div>
+            
+                                <div class="d-flex">
+                                    <input type="checkbox" id="freelancer" name="occupation" value="freelancer">
+                                    <label for="freelancer">Kinh doanh tự do</label>
+                                </div>
+                            
+                                <div class="d-flex">
+                                    <input type="checkbox" id="unemployed" name="occupation" value="unemployed">
+                                    <label for="unemployed">Thất nghiệp</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <input type="checkbox" id="government" name="occupation" value="government">
+                                    <label for="government">Công chức, viên chức</label>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="checkbox" id="housewife" name="occupation" value="housewife">
+                                    <label for="housewife">Nội trợ</label>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="checkbox" id="other" name="occupation" value="other">
+                                    <label for="other">Khác</label>
+                                </div>  
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <input type="checkbox" id="officeworker" name="occupation" value="officeworker">
+                                    <label for="officeworker">Nhân viên văn phòng</label>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="checkbox" id="teacher" name="occupation" value="teacher">
+                                    <label for="teacher">Giáo viên</label>
+                                </div>
+                            </div>
+                        
+                        
+                        </div>
+                        <label>Học sinh, sinh viên</label>
+                        <div class="is-student">
+                            <input type="radio" id="is-student-no" name="is-student" value="no" checked>
+                            <label for="is-student-no">Không</label>
+                            <input type="radio" id="is-student-yes" name="is-student" value="yes">
+                            <label for="is-student-yes">Có</label>
+                        </div>
+
+                        <label for="work-address">Địa chỉ làm việc</label>
+                        <input type="text" id="work-address" placeholder="Nhập địa chỉ làm việc">
+                        <div class="row">                   
+                            <div class="col-md-4">
+                                <label for="city">Tỉnh/Thành phố *</label>
+                                <select id="city">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>                
+                            <div class="col-md-4">
+                                <label for="district">Quận/Huyện *</label>
+                                <select id="district">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>                
+                            <div class="col-md-4">
+                                <label for="ward">Xã/Phường *</label>
+                                <select id="ward">
+                                    <option value="">Chọn</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label>Mục đích dự thi *</label>
+                        <div class="row">
+                            <div class="d-flex">
+                                <input type="checkbox" id="assess" name="purpose" value="assess">
+                                <label for="assess">Đánh giá trình độ</label>
+                            </div>                   
+                            <div class="d-flex">
+                                <input type="checkbox" id="studyabroad" name="purpose" value="studyabroad">
+                                <label for="studyabroad">Du học</label>
+                            </div>
+                            <div class="d-flex">
+                                <input type="checkbox" id="job" name="purpose" value="job">
+                                <label for="job">Xin việc hoặc nâng ngạch</label>
+                            </div>
+                            <div class="d-flex">
+                                <input type="checkbox" id="graduation" name="purpose" value="graduation">
+                                <label for="graduation">Xét tốt nghiệp</label>
+                            </div>
+                        </div>
+
+                        <label for="scoretarget">Mục tiêu điểm số *</label>
+                        <input type="text" id="scoretarget" name="scoretarget">
+
+                        <label>Đã từng thi *</label>
+                        <div>
+                            <input type="radio" id="never" name="testbefore" value="never">
+                            <label for="never">Chưa từng thi</label>
+                            <input type="radio" id="ever" name="testbefore" value="ever">
+                            <label for="ever">Từng thi</label>
+                        </div>
+
+                        <label for="region">Khu vực thi *</label>
+                        <select id="region" name="region">
+                            <option value="">Chọn</option>
+                            <!-- Add more options here as needed -->
+                        </select><br><br>
+
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border bg-light">
+                            <div class="upload-section">
+                                <h2>Hình 3x4cm *</h2>
+  
+                                <p><strong>Lưu ý:</strong> Nếu ảnh không đáp ứng tiêu chuẩn theo yêu cầu, thí sinh có thể bị từ chối tham dự kỳ thi</p>
+                                <p>Vui lòng tuân thủ các yêu cầu tiêu chuẩn về ảnh <a href="#">tại đây</a></p>
+
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="upload-box">
+                                        <p>Ảnh mẫu</p>
+                                        <div class="sample-picture">
+                                            <img src="sample.jpg" alt="Ảnh mẫu">
+                                        </div>
+                                    </div>
+                                    <div class="upload-box">
+                                        <p>Ảnh thí sinh</p>
+                                        <div class="avatar-container">
+                                            <img src="sample.jpg" alt="Ảnh mẫu" class="img-preview">
+                                        </div>
+                                        <div class="upload-button">
+                                            <input type="file" id="upload" name="upload" accept="image/*">
+                                            <label for="upload">Tải lên</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-box">
+                                    <h2>Mặt trước CMND/CCCD/HC *</h2>
+                                    <p><strong>Lưu ý</strong>*: Còn hạn và nguyên gốc, không bong/rách; Các chi tiết rõ nét, không có dấu hiệu chỉnh sửa.</p>
+                                    <p class="note">Vui lòng tuân thủ các yêu cầu tiêu chuẩn về giấy tờ tại <a href="#">tại đây</a>.</p>
+                                    <div class="img-container">
+                                        <img src="sample.jpg" alt="Ảnh mẫu" class="img-preview">
+                                    </div>
+                                    <div class="upload-button">
+                                        <input type="file" id="upload" name="upload" accept="image/*">
+                                        <label for="upload">Tải lên</label>
+                                    </div>
+                                </div>
+                            
+                                <div class="upload-box">
+                                    <h2>Mặt sau CMND/CCCD *</h2>
+                                    <div class="img-container">
+                                        <img src="sample.jpg" alt="Ảnh mẫu" class="img-preview">
+                                    </div>
+                                    <div class="upload-button">
+                                        <input type="file" id="upload" name="upload" accept="image/*">
+                                        <label for="upload">Tải lên</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

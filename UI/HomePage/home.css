@@ -1,0 +1,131 @@
+#btnMoreInfo {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    font-size: 18px;
+}
+.image-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.rounded-image {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%; /* Tạo viền tròn */
+    border: 0px solid #007bff; /* Tạo viền xanh dương */
+    object-fit: contain; /* Đảm bảo ảnh không bị méo */
+}
+ .centerElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+    background-color: white /* Nền trắng */ !important;
+    border: 1px solid #ccc; /* Viền xám nhạt */
+    color: black; /* Màu chữ đen */
+}
+#dropdownMenuButton {
+    background-color: transparent;
+}
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.notification {
+    background-color: #ffe9b3;
+    padding: 20px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #855a1f;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+}
+
+.today-schedule, .my-courses, .latest-results {
+    margin-bottom: 20px;
+}
+
+.latest-results {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.result-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+

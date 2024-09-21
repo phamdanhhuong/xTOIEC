@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark" style="background-color: #153e6e;">
+        <div class="container-fluid ms-3 me-3">
+            <a class="navbar-brand" href="#">xTOIEC</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <span class="navbar-text fw-medium">HỆ THỐNG THI TRỰC TUYẾN</span>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="centerElement">
+                        <a id="examButton" class="navbar-text fw-medium ms-3 me-3" href="#">Đề thi online</a>
+                        <a id="historyButton" class="navbar-text fw-medium me-3" a href="#">Lịch sử làm bài</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="image-container" >
+                                <img src="https://th.bing.com/th/id/OIP.AX4TQBh9YDb7g2L2REXO7QHaGZ?rs=1&pid=ImgDetMain" class="rounded-image"/>
+                            </span>    
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Trang cá nhân</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Xin chào, hieu7a3thcsbt!</h1>
+        <div class="notification">Bạn chưa tạo mục tiêu cho quá trình luyện thi của mình.
+        </div>
+        
+        <section class="today-schedule">
+            <h2>Lịch học hôm nay</h2>
+            <p>Bạn không có lịch học hôm nay. Vui lòng vào <a href="#">Lịch học của tôi</a> để xem thêm hoặc tạo mới.</p>
+        </section>
+        
+        <section class="my-courses">
+            <h2>Khoá học của tôi</h2>
+            <p>Bạn chưa đăng ký khoá học nào!</p>
+        </section>
+        
+        <section class="latest-results">
+            <h2>Kết quả luyện thi mới nhất</h2>
+            <button>Thống kê kết quả luyện thi</button>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>New Economy TOEIC Test 8</h3>
+                    <span class="tag">Luyện tập</span>
+                    <span class="tag">Part 7</span>
+                    <p>Ngày làm bài: 13/09/2024</p>
+                    <p>Thời gian hoàn thành: 0:35:37</p>
+                    <p>Kết quả: 19/54</p>
+                    <a href="#">[Xem chi tiết]</a>
+                </div>
+                <div class="result-card">
+                    <h3>New Economy TOEIC Test 8</h3>
+                    <span class="tag">Luyện tập</span>
+                    <span class="tag">Part 6</span>
+                    <p>Ngày làm bài: 13/09/2024</p>
+                    <p>Thời gian hoàn thành: 0:08:23</p>
+                    <p>Kết quả: 11/16</p>
+                    <a href="#">[Xem chi tiết]</a>
+                </div>
+                <div class="result-card">
+                    <h3>New Economy TOEIC Test 8</h3>
+                    <span class="tag">Luyện tập</span>
+                    <span class="tag">Part 5</span>
+                    <p>Ngày làm bài: 13/09/2024</p>
+                    <p>Thời gian hoàn thành: 0:28:48</p>
+                    <p>Kết quả: 23/30</p>
+                    <a href="#">[Xem chi tiết]</a>
+                </div>
+            </div>
+            <a href="#" class="view-all">Xem tất cả >></a>
+        </section>
+    </div>
+</body>
+</html>

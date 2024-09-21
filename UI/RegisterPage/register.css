@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.registration-form {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender, .id-usage, .occupation, .is-student {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container .note {
+    color: black;
+    font-size: 14px;
+}
+.upload-box {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+}
+.upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-box input {
+    display: none;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: 1px solid #ececec;
+    padding: 10px;
+    min-height: 8em;
+}
+.sample-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: 1px solid #ececec;
+    padding: 10px;
+    min-height: 10em;
+    min-width: 8.3em;
+}
+.avatar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #ececec;
+    padding: 10px;
+    min-height: 10em;
+    min-width: 8.3em;
+}
+.upload-box label {
+    padding: 5px 10px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+}
+.upload-box label:hover {
+    background-color: #00a1f2;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

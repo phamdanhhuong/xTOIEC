@@ -1,0 +1,111 @@
+.btn-rounded {
+    border: 2px solid #ff5b18;
+    border-radius: 5px;
+    background-color: #ff5b18;
+    display: inline-block;
+    color: white; 
+    padding: 5px 10px;
+    font-size: 16px; 
+    text-align: center; 
+    text-decoration: none; 
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-rounded:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3; 
+}
+#timeRemain {
+    border: 2px solid #6ca4d9;
+    border-radius: 5px;
+    background-color: #6ca4d9;
+    display: inline-block;
+    color: white; 
+    padding: 5px 10px;
+    font-size: 16px; 
+    text-align: center; 
+    text-decoration: none; 
+}
+#examArea {
+    margin: 15px 20px 15px 20px;
+    padding: 20px;
+    height: 90vh;
+    border: 2px solid #6ca4d9;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+#recentQuestion {
+    margin-left: auto;
+}
+#recentPart {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    background-color: #034c8e;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+#recentPartDetail{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff810b;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+}
+#recentQuestion {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #ff810b;
+    font-weight: bold;
+    padding: 10px 20px;
+    overflow-y: auto;
+    color: white;
+}
+.exContentArea {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    gap: 20px;
+}
+.exContent {
+    flex: 1;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    height: 100%;
+    display: inline-block;
+    overflow: auto;
+}
+.question {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 20px;
+}
+.radioContainer{
+    border: 2px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+.radioContainer.selected {
+    border-color: #7aff6c;
+}
+.titleBold{
+    font-size: 26px;
+    font-weight: bold;
+    color: #005186;
+    text-align: left;
+    padding: 20px;;
+}
